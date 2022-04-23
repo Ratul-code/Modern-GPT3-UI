@@ -9,8 +9,8 @@ const Footer = () => {
          <h1>
            {heading}
          </h1>
-         {links.map(link=>(
-           <p><a href="#">{link}</a></p>
+         {links.map((link,index)=>(
+           <p key={index}><a href="#">{link}</a></p>
          ))}
 
        </div>
